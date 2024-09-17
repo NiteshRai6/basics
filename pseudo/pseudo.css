@@ -1,0 +1,82 @@
+div {
+    margin: 20px;
+    font-size: 22px;
+}
+
+p {
+    font-size: 22px;
+    margin-left: 20px;
+}
+
+/* descendant selector (space) : */
+.descendant p {
+    color: green;
+}
+
+/* child selector (>) : */
+.child>p {
+    color: red;
+}
+
+/* adjacent sibling selector (+) : */
+.adjacent-sibling+p {
+    color: blue;
+}
+
+/* general sibling selector (~) : */
+.general-sibling~p {
+    color: violet;
+}
+
+.btn {
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: large;
+    border-radius: 8px;
+    /* border-radius: top-left top-right bottom-right bottom-left */
+    /* border-radius: 5px 10px 15px 20px; */
+    /* Example> border-top-left-radius */
+    cursor: pointer;
+}
+
+/* pseudo class :hover */
+.btn:hover {
+    background-color: magenta;
+}
+
+/* pseudo class :first-child */
+.fc p:first-child {
+    color: rgb(205, 50, 55);
+}
+
+/* pseudo element ::first-line */
+.fl::first-line {
+    color: purple;
+}
+
+/* pseudo element ::first-letter */
+.flt::first-letter {
+    font-size: 24px;
+    color: magenta;
+}
+
+/* pseudo element ::marker */
+li::marker {
+    color: magenta;
+    font-size: 28px;
+}
+
+/* pseudo element ::selection */
+.user p::selection {
+    color: white;
+    background-color: #3c3c3c;
+}
+
+/* [attribute="value"] selector :  */
+input[type="text"] {
+    color: magenta;
+    padding: 5px;
+    font-size: larger;
+}

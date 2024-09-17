@@ -1,0 +1,40 @@
+.flex-box {
+    display: flex;
+    gap: 20px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: magenta;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#box3 {
+    flex-grow: 1;
+}
+
+#box7 {
+    flex-shrink: 0;
+}
+
+#box6 {
+    height: 150px;
+    align-self: flex-start;
+}
+
+#box9 {
+    height: 150px;
+    align-self: flex-end;
+}

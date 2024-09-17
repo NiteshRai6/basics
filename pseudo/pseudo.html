@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="./pseudo.css">
+
+    <title>Pseudo</title>
+</head>
+
+<body>
+
+    <h1>Combinators, Pseudo Class & Element :</h1>
+
+    <div class="descendant">
+        <header>1. Descendant selector (space) :</header>
+        <p>apple</p>
+        <p>banana</p>
+        <section>
+            <p>mango</p>
+        </section>
+    </div>
+
+    <div class="child">
+        <header>2. Child selector (>) :</header>
+        <p>apple</p>
+        <p>banana</p>
+        <section>
+            <p>mango</p>
+        </section>
+    </div>
+
+    <div class="adjacent-sibling">3. Adjacent sibling selector (+) :</div>
+    <p>para1</p>
+    <p>para2</p>
+    <p>para3</p>
+    <section>
+        <p>para4</p>
+    </section>
+
+    <div class="general-sibling">4. General sibling selector (~) :</div>
+    <p>para1</p>
+    <p>para2</p>
+    <p>para3</p>
+    <section>
+        <p>para4</p>
+    </section>
+
+    <div>
+        <button class="btn">Button</button>
+    </div>
+
+    <div>5. Pseudo Class :first-child</div>
+    <div class="fc">
+        <p>Item 1</p>
+        <p>Item 2</p>
+        <p>Item 3</p>
+    </div>
+
+    <div>6. Pseudo Element ::first-line</div>
+    <div class="fl">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum aliquid enim possimus est, nihil ex, totam
+            optio rem ducimus odio a quis ab nostrum cumque veniam fuga officia similique quisquam!
+            Quisquam alias, sapiente dignissimos quia nesciunt, dicta consectetur placeat aperiam debitis vel laudantium
+            nostrum, exercitationem doloremque laboriosam ipsum iste! Quos quod hic placeat voluptate deleniti mollitia
+            modi, aliquid eius aliquam.
+            Facere odit fugiat, ipsam consectetur modi consequuntur numquam enim sapiente porro neque at consequatur
+            aliquam laborum et quaerat nemo sunt eum quas. Deserunt minima est molestias repellendus officiis, et unde!
+        </p>
+    </div>
+
+    <div>7. Pseudo Element ::first-letter</div>
+    <div class="flt">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus neque placeat ipsam asperiores, odit
+            mollitia sunt consequatur culpa adipisci dolor eveniet aliquid, voluptate commodi. Rerum odit hic facilis
+            harum aliquid!</p>
+    </div>
+
+    <div>8. Pdeudo Element ::marker</div>
+    <div>
+        <ul>
+            <li>Apple</li>
+            <li>Mango</li>
+            <li>Banana</li>
+        </ul>
+    </div>
+
+    <div>9. Pdeudo Element ::selection</div>
+    <div class="user">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi a illum ad illo reiciendis et odit, harum nisi
+            cum autem sequi repudiandae temporibus deserunt. Aliquam nulla ipsa impedit facere optio.</p>
+    </div>
+
+    <div>10. [attribute="value"] selector</div>
+    <div>
+        <input type="text">
+    </div>
+
+
+</body>
+
+</html>
